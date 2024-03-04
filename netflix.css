@@ -1,0 +1,392 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 500vh;
+    background-color: black;
+    /* border: 1px solid black; */
+}
+.home-pg{
+    width: 100%;
+    height: 700px;
+    background-image: url(https://thedrum-media.imgix.net/thedrum-prod/s3/news/tmp/10557/netflixa.jpg?w=1280&ar=default&fit=crop&crop=faces,edges&auto=format);
+    background-color: rgba(0, 0, 0, 0.733);
+    background-blend-mode: darken;
+    background-repeat: none;
+    background-size: cover;
+    border-bottom: 7px solid rgb(73, 73, 73);
+    /* border: 1px solid blue; */
+}
+.nav-bar{
+    width: 100%;
+    height: 100px;
+    /* border: 1px solid red; */
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-bar > img{
+    margin-left: 190px;
+}
+.sign-in > button{
+    border: none;
+    border-radius: 5px;
+    padding: 8px 15px;
+    margin-right: 190px;
+    background-color: rgb(240, 33, 33);
+    color: white;
+}
+.sign-in > button:hover{
+    background-color: rgb(156, 11, 11);
+    padding: 9px 16px;
+}
+.unlimited{
+    /* border: 1px solid white; */
+    width: 100%;
+    height: 550px;
+    padding-top: 200px;
+}
+.unlimited > h3{
+    font-size: 45px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    line-height: 75px;
+}
+p{
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    line-height: 45px;
+}
+.email{
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 65px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+.email > input{
+    width: 30%;
+    height: 63px;
+    border: 1px solid rgb(126, 175, 175);
+    border-radius: 5px;
+    color: white;
+    background-color: rgba(26, 23, 23, 0.644);
+    padding-left: 18px;
+}
+.em-button > button{
+    font-size: 25px;
+    padding: 17px 30px;
+    background-color: rgb(218, 15, 15);
+    color: whitesmoke;
+    border-radius: 5px;
+    border: none;
+    display: flex;
+    gap: 8px;
+}
+.em-button > button:hover{
+    cursor: pointer;
+    background-color: rgb(165, 8, 9);
+}
+.Enjoy{
+    width: 100%;
+    height: 600px;
+    /* border: 1px solid rgb(235, 230, 230); */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-bottom: 7px solid rgb(73, 73, 73);
+}
+.enjoy-body{
+    height: 500px;
+    /* border: 1px solid white; */
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-left: 150px;
+    padding-top: 2%;
+    margin-top: 20px;
+}
+.enjoy-txt{
+    width: 550px;
+    height: 250px;
+    /* border: 1px solid red; */
+}
+.enjoy-txt > h3{
+    font-size: 50px;
+    line-height: 100px;
+}
+.enjoy-txt > p{
+    font-size: 20px;
+    line-height: 30px;
+}
+.enjoy-img{
+    width: 600px;
+    height: 500px;
+    /* border: 1px solid blue; */
+    background-image: url(pictures/1.png);
+    background-repeat: no-repeat;
+    animation-name: moving-pic;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+@keyframes moving-pic{
+    10%{
+        background-image: url(pictures/1.png);
+    }
+    20%{
+        background-image: url(pictures/2.png);
+        margin-bottom: 90px;
+    }
+    40%{
+        background-image: url(pictures/3.png);
+        margin-top: 100px;
+    }
+    60%{
+        background-image: url(pictures/4.png);
+        margin-bottom: 90px;
+    }
+    80%{
+        background-image: url(pictures/5.png);
+    }
+    99%{
+        background-image: url(pictures/6.png);
+    }
+    100%{
+        background-image: url(pictures/1.png);
+    }
+}
+.Download{
+    width: 100%;
+    height: 600px;
+    /* border: 1px solid rgb(235, 230, 230); */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-bottom: 7px solid rgb(73, 73, 73);
+}
+.download-body{
+    height: 500px;
+    /* border: 1px solid white; */
+    display: flex;
+    align-items: center;
+}
+.download-img{
+    width: 450px;
+    height: 500px;
+    /* border: 1px solid blue; */
+    background-image: url(pictures/first.png);
+    background-repeat: no-repeat;
+    margin-top: 200px;
+}
+.download-txt{
+    width: 650px;
+    height: 250px;
+    /* border: 1px solid red; */
+}
+.download-txt > h3{
+    font-size: 40px;
+    line-height: 60px;
+}
+.download-txt > p{
+    font-size: 20px;
+    line-height: 30px;
+}
+.Watch{
+    width: 100%;
+    height: 400px;
+    /* border: 1px solid red; */
+    border-bottom: 7px solid rgb(73, 73, 73);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.watch-txt{
+    /* border: 1px solid white; */
+    width: 400px;
+    height: 400px;
+    color: white;
+    padding-top: 70px;
+    margin-right: 500px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.watch-txt > h3{
+    font-size: 50px;
+}
+.watch-txt > p{
+    font-size: 20px;
+    line-height: 30px;
+    padding-top: 30px;
+}
+.kids{
+    width: 100%;
+    height: 600px;
+    /* border: 1px solid rgb(235, 230, 230);    */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-bottom: 7px solid rgb(73, 73, 73);
+}
+.kids-body{
+    /* border: 1px solid red; */
+    height: 500px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+/* .cartoon{
+    border: 1px solid green; 
+}  */
+.kids-txt{
+    /* border: 1px solid white; */
+    width: 590px;
+    height: 400px;
+    color: white;
+    padding-top: 100px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.kids-txt > h3{
+    font-size: 45px;
+    line-height: 90px;
+}
+.kids-txt > p{
+    font-size: 20px;
+    line-height: 30px;
+}
+.Questions{
+    width: 100%;
+    height: 1000px;
+    /* border: 1px solid white; */
+    border-bottom: 7px solid rgb(73, 73, 73);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Frequently{
+    /* border: 1px solid red; */
+    width: 70%;
+    height: 900px;
+}
+.Frequently > h3{
+    color: white;
+    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+.Questions-opt{
+    width: 100%;
+    height: 70%;
+    margin-top: 30px;
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
+}
+.questions{
+    width: 100%;
+    height: 90px;
+    /* border: 1px solid white; */
+    background-color: rgb(73, 73, 73);
+}
+.questions > h6{
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 90px;
+    padding-left: 20px;
+    color: rgb(216, 214, 214);
+}
+/* .questions > i{
+
+} */
+.questions :hover{
+    cursor: pointer;
+    background-color: rgb(99, 97, 97);
+}
+.email-add{
+    text-align: center;
+    margin-top: 20px;
+}
+.email-add > p{
+    font-size: 20px;
+}
+.email-inp{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+.email-inp > input{
+    width: 30%;
+    height: 63px;
+    border: 1px solid rgb(126, 175, 175);
+    border-radius: 5px;
+    color: white;
+    background-color: rgba(26, 23, 23, 0.644);
+    padding-left: 18px;
+}
+.email-inp > button{
+    font-size: 25px;
+    padding: 17px 30px;
+    background-color: rgb(218, 15, 15);
+    color: whitesmoke;
+    border-radius: 5px;
+    border: none;
+    display: flex;
+    gap: 8px;
+}
+.email-inp > button:hover{
+    cursor: pointer;
+    background-color: rgb(165, 8, 9);
+}
+.contact{
+    width: 100%;
+    height: 393px;
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: center;
+}
+.contact-body{
+    width: 80%;
+    height: 300px;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    gap: 10%;
+}
+.first{
+    display: flex;
+    flex-direction: column;
+    line-height: 40px;
+    font-size: 13px;
+    padding-top: 90px;
+}
+.first > a{
+    color: rgb(189, 187, 187);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.first > select{
+    background-color: rgba(26, 23, 23, 0.644);
+    padding: 9px 2px;
+    border: 1px light white;
+    border-radius: 5px;
+    margin-top: 30px;
+    color: white;
+}
+.first > p{
+    margin-top: 20px;
+}
+
+
+
