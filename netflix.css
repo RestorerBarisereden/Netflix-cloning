@@ -5,7 +5,7 @@
 }
 .container{
     width: 100%;
-    height: 500vh;
+    /* height: 559vh; */
     background-color: black;
     /* border: 1px solid black; */
 }
@@ -186,7 +186,7 @@ p{
     /* border: 1px solid blue; */
     background-image: url(pictures/first.png);
     background-repeat: no-repeat;
-    margin-top: 200px;
+    /* margin-top: 200px; */
 }
 .download-txt{
     width: 650px;
@@ -203,7 +203,7 @@ p{
 }
 .Watch{
     width: 100%;
-    height: 400px;
+    /* height: 400px; */
     /* border: 1px solid red; */
     border-bottom: 7px solid rgb(73, 73, 73);
     display: flex;
@@ -212,11 +212,11 @@ p{
 }
 .watch-txt{
     /* border: 1px solid white; */
-    width: 400px;
+    width: 100%;
     height: 400px;
     color: white;
     padding-top: 70px;
-    margin-right: 500px;
+    margin-left: 250px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .watch-txt > h3{
@@ -267,7 +267,8 @@ p{
 .Questions{
     width: 100%;
     height: 1000px;
-    /* border: 1px solid white; */
+    padding: 50px;
+    /* border-bottom: 1px solid white; */
     border-bottom: 7px solid rgb(73, 73, 73);
     display: flex;
     justify-content: center;
@@ -286,17 +287,18 @@ p{
 }
 .Questions-opt{
     width: 100%;
-    height: 70%;
+    /* height: 70%; */
     margin-top: 30px;
     /* border: 1px solid blue; */
     display: flex;
     flex-direction: column;
-    gap: 2%;
+    gap: 10px;
 }
 .questions{
     width: 100%;
-    height: 90px;
+    /* height: 90px; */
     /* border: 1px solid white; */
+    /* padding: 50px; */
     background-color: rgb(73, 73, 73);
 }
 .questions > h6{
@@ -327,8 +329,8 @@ p{
     margin-top: 20px;
 }
 .email-inp > input{
-    width: 30%;
-    height: 63px;
+    width: 40%;
+    /* height: 63px; */
     border: 1px solid rgb(126, 175, 175);
     border-radius: 5px;
     color: white;
@@ -336,8 +338,10 @@ p{
     padding-left: 18px;
 }
 .email-inp > button{
-    font-size: 25px;
-    padding: 17px 30px;
+    font-size: 20px;
+    padding: 8px 19px;
+    margin-top: 20px;
+    padding-top: 20px;
     background-color: rgb(218, 15, 15);
     color: whitesmoke;
     border-radius: 5px;
@@ -386,6 +390,181 @@ p{
 }
 .first > p{
     margin-top: 20px;
+}
+
+@media screen and (max-width: 1200px){
+    * {
+        /* width: 100%; */
+        /* overflow-x: hidden; */
+    }
+
+    .questions {
+        /* height: 520px; */
+    }
+
+    .enjoy-body {
+        width: 100%;
+    }
+
+    .enjoy-img {
+        width: 50%;
+    }
+    .enjoy-txt {
+        width: 50%;
+    }
+
+    .kids-body {
+        padding: 20px;
+        /* padding-left: 30px; */
+        /* padding-right: 30px; */
+        width: 100%;
+    }
+
+    .kids-txt {
+        width: 50%;
+    }
+
+    .cartoon {
+        width: 50%;
+    }
+
+    .cartoon > img {
+        width: 90%;
+    }
+
+    .download-body {
+        width: 100%;
+    }
+
+    .download-txt {
+        width: 50%;
+    }
+
+    .enjoy-body {
+        width: 100%;
+        margin-left: 0px;
+        padding: 30px;
+    }
+
+    .download-img {
+        width: 50%;
+    }
+
+    .email-add {
+        margin: 0px;
+    }
+    
+    .Watch{
+        width: 100%;
+        padding-left: 70px;
+    }
+
+    .watch-txt{
+        height: 400px;
+    }
+    .Questions {
+        /* padding: 0px; */
+        padding-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 870px){
+    .email-inp {
+        
+    }
+
+    .email-inp {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .email-inp > input {
+        width: 100%;
+    }
+
+    .email-inp > button {
+        width: 50%;
+        justify-content: center;
+        margin: 0px;
+    }
+
+    .Questions{
+        height: 1200px;
+        padding: 0px;
+    }
+
+    .enjoy-body{
+        /* display: flex; */
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .enjoy-txt{
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .enjoy-txt > h3{
+        font-size: 40px;
+    }
+
+    .enjoy-txt > p{
+        font-size: 15px;
+    }
+
+    .download-body{
+        flex-direction: column;
+        width: 100%;
+        gap: 10%;
+    }
+
+    .download-txt{
+        width: 100%;
+        text-align: center;
+    }
+
+    .download-txt > h3{
+        font-size: 30px;
+    }
+
+    .download-txt > p{
+        font-size: 15px;
+    }
+
+    .Watch{
+        width: 100%;
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+        border-bottom: 7px solid rgb(73, 73, 73);
+        border: 1px solid red;
+    }
+
+    .watch-txt{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid white;
+        margin-left: 200px;
+        align-items: center;
+        /* text-align: center; */
+    }
+
+    .watch-txt > h3{
+        font-size: 40px;
+    }
+
+    .watch-txt > p{
+        width: 100%;
+        font-size: 15px;
+        padding-left: 90px;
+        /* border: 1px solid red; */
+    }
+
 }
 
 
